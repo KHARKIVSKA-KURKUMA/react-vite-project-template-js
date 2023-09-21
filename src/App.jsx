@@ -1,31 +1,25 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import { GlobalStyle } from "./GlobalStyles";
 
 function App() {
   return (
-    <BrowserRouter
-      basename={import.meta.env.DEV ? "/" : "/react-vite-project-template-js/"}
-    >
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <h1>Home page</h1>
-              <Link to="another">Link to Another Page</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/another"
-          element={
-            <div>
-              <h1> Another Page</h1>
-              <Link to="/">Link to Home</Link>
-            </div>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <GlobalStyle />
+      <BrowserRouter
+        basename={
+          import.meta.env.DEV ? "/" : "/react-vite-project-template-js/"
+        }
+      >
+        <Routes>
+          <Route path="/">
+            <Route index element={<HomePage />} />
+            <Route path="/another" element={<AboutPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

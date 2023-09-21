@@ -1,8 +1,74 @@
-# React + Vite
+# React Project Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created with
+[Vite](https://vitejs.dev/). To get
+acquainted and configure additional features
+[refer to guide](https://vitejs.dev/guide/).
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run this Car Rent Website on your local machine, follow these steps:
+
+### Clone the Repository
+
+```bash
+
+git clone https://github.com/KHARKIVSKA-KURKUMA/react-vite-project-template-js.git
+
+```
+
+Or just tap the `«Use this template»` button and choose
+`«Create a new repository»` option
+
+### Install Dependencies
+
+```bash
+
+npm install
+
+```
+
+### Run the Application
+
+```bash
+npm start
+
+```
+
+### Access the Website:
+
+You will be redirected to your website.
+
+## Deploy
+
+The production version of the project will automatically be linted, built, and
+deployed to GitHub Pages every time the `main` branch
+is updated.
+
+Next, you need to go to the settings of the GitHub repository (`Settings` >
+`Pages`) and set the distribution of the production version of files with GitHub Action, if this was not done automatically. You can see it on the image below.
+
+![GitHub Pages settings](./public/assets/repo-settings.png)
+
+### Deployment status
+
+The deployment status of the latest commit is displayed with an icon next to its
+ID.
+
+- **Yellow color** - the project is being built and deployed.
+- **Green color** - deployment completed successfully.
+- **Red color** - an error occurred during linting, build or deployment.
+
+More detailed information about the status can be viewed by clicking on the
+icon, and in the drop-down window, follow the link `Details`.
+
+### Live page
+
+After some time, usually a couple of minutes, the live page can be viewed at the
+address specified in the edited `homepage` property. For example, here is a link
+to a live version for this repository
+
+[https://kharkivska-kurkuma.github.io/react-vite-project-template-js/](https://kharkivska-kurkuma.github.io/react-vite-project-template-js/).
+
+If a blank page opens, make sure there are no errors in the `Console` tab
+related to incorrect paths to the CSS and JS files of the project (**404**).
