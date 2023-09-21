@@ -7,7 +7,7 @@ acquainted and configure additional features
 
 ## Getting Started
 
-To run this Car Rent Website on your local machine, follow these steps:
+To run this React Project Template on your local machine, follow these steps:
 
 ### Clone the Repository
 
@@ -34,10 +34,6 @@ npm install
 npm start
 
 ```
-
-### Access the Website:
-
-You will be redirected to your website.
 
 ## Deploy
 
