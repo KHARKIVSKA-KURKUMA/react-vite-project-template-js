@@ -1,4 +1,4 @@
-# React Project Template
+# React Project Template With Routing
 
 Цей проєкт був зібраний за допомогою
 [Vite](https://vitejs.dev/). Ознайомитись та налаштувати додатковий функціонал

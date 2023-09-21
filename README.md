@@ -1,4 +1,4 @@
-# React Project Template
+# React Project Template With Routing
 
 This project was created with
 [Vite](https://vitejs.dev/). To get
@@ -35,7 +35,9 @@ npm start
 
 ```
 
-## Deploy
+<a id="deploy"></a>
+
+## Deploy + Routing
 
 Change `<YOUR_REPO_NAME>` to your repo name in `vite.config.js`
 
