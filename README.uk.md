@@ -34,7 +34,27 @@ npm start
 
 ```
 
-## Розгортання (Deploy)
+<a id="deployment-section"></a>
+
+## Розгортання (Deploy) + Маршрутизація
+
+Замініть `<YOUR_REPO_NAME>` на назву вашого репозиторія в файлі `vite.config.js`
+
+```jsx
+if (command !== "serve") {
+  config.base = "/<YOUR_REPO_NAME>/";
+}
+```
+
+і в файлі `App.jsx`
+
+```jsx
+ <BrowserRouter
+        basename={
+          import.meta.env.DEV ? "/" : "/<YOUR_REPO_NAME>/"
+        }
+      >
+```
 
 Продакшн-версія проекту буде автоматично створена, створена та розгорнется на GitHub page кожного разу, коли гілка `main`
 оновлюється.
@@ -64,4 +84,4 @@ npm start
 [https://kharkivska-kurkuma.github.io/react-vite-project-template-js/](https://kharkivska-kurkuma.github.io/react-vite-project-template-js/).
 
 Якщо відкривається порожня сторінка, переконайтеся, що на вкладці `Console` немає помилок
-пов'язаних з неправильними шляхами до файлів CSS і JS проекту (**404**).
+пов'язаних з неправильними шляхами до файлів CSS і JS проекту (**404**). Якщо помилки існують перевірте шляхи описані в секції [Deploy](#deployment-section)

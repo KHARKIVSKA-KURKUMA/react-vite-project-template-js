@@ -37,6 +37,24 @@ npm start
 
 ## Deploy
 
+Change `<YOUR_REPO_NAME>` to your repo name in `vite.config.js`
+
+```jsx
+if (command !== "serve") {
+  config.base = "/<YOUR_REPO_NAME>/";
+}
+```
+
+and in `App.jsx` file
+
+```jsx
+ <BrowserRouter
+        basename={
+          import.meta.env.DEV ? "/" : "/<YOUR_REPO_NAME>/"
+        }
+      >
+```
+
 The production version of the project will automatically be linted, built, and
 deployed to GitHub Pages every time the `main` branch
 is updated.
@@ -67,4 +85,4 @@ to a live version for this repository
 [https://kharkivska-kurkuma.github.io/react-vite-project-template-js/](https://kharkivska-kurkuma.github.io/react-vite-project-template-js/).
 
 If a blank page opens, make sure there are no errors in the `Console` tab
-related to incorrect paths to the CSS and JS files of the project (**404**).
+related to incorrect paths to the CSS and JS files of the project (**404**). If you have such errors double check [Deploy Section](#deploy)
