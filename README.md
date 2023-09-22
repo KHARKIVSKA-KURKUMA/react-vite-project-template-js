@@ -71,10 +71,9 @@ Next, you need to go to the settings of the GitHub repository (`Settings` >
 The deployment status of the latest commit is displayed with an icon next to its
 ID.
 
-- <span style="color: yellow; font-weight: bold;">Yellow color</span> - the project is being built and deployed.
-- <span style="color: green; font-weight: bold;">Green color</span> - deployment completed successfully.
-- <span style="color: red; font-weight: bold;">Red color</span> - an error occurred during linting, build, or deployment.
-
+- ![Yellow](https://via.placeholder.com/15/9e6a03/000000?text=+) - the project is being built and deployed.
+- ![Green](https://via.placeholder.com/15/3fb950/000000?text=+) - deployment completed successfully.
+- ![Red](https://via.placeholder.com/15/f85149/000000?text=+) - an error occurred during linting, build, or deployment.
 
 More detailed information about the status can be viewed by clicking on the
 icon and in the drop-down window, follow the link `Details`.
