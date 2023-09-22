@@ -87,4 +87,4 @@ to a live version for this repository
 [https://kharkivska-kurkuma.github.io/react-vite-project-template-js/](https://kharkivska-kurkuma.github.io/react-vite-project-template-js/).
 
 If a blank page opens, make sure there are no errors in the `Console` tab
-related to incorrect paths to the CSS and JS files of the project (**404**). If you have such errors double check [Deploy Section](#deploy)
+related to incorrect paths to the files of the project (**404**). If you have such errors double check [Deploy Section](#deploy)
